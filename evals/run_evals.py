@@ -11,7 +11,8 @@ from providers import Provider
 from scenarios import ScenarioTools
 from grading import grade_case, summarize, bonus_points
 from bonus.tools import BonusTools
-
+from dotenv import load_dotenv
+load_dotenv()  # Nạp toàn bộ biến từ file .env
 
 def run_case(case, args):
     try:
